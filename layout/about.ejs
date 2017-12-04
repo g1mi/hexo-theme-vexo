@@ -1,7 +1,6 @@
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <div id="about-banner" style="background-image: url(<%- theme.about.banner %>)"></div>
-<script src="//rawgit.com/saribe/eModal/master/dist/eModal.min.js"></script>
-
-
 <div class="author">
   <div class="head">
     <img src="<%- theme.about.avatar %>" />
@@ -11,14 +10,6 @@
 
 
   <section class="share-icons">
-    <% if (theme.about.weibo_username) { %>
-      <a class="icon-weibo" target="_blank" onclick="eModal.alert('You shall not pass!')">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    <% } %>
     <% if (theme.about.twitter_username) { %>
       <a class="icon-twitter" href="mailto:g1mi@qq.com" target="_blank">
         <span class="fa-stack fa-lg">
@@ -32,6 +23,15 @@
         <span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    <% } %>
+
+    <% if (theme.about.weibo_username) { %>
+      <a class="icon-douban" target="_blank" onclick="swal('g1miology', '小贴士：请搜索并添加上面的微信号哟！', 'success');">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
         </span>
       </a>
     <% } %>
