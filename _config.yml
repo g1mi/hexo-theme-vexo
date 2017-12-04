@@ -6,11 +6,10 @@ favicon:
 excerpt_link: Read more
 
 menu:
- Home: /
+ Heroes: /heroes
  Tags: /tags/
  Timeline: /archives/
  Projects: /project/
- Todos: /todos
  About: /about/
 
 
