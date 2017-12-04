@@ -8,9 +8,15 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><%- page.content %></section>
+    <section class="markdown-content">
 
-      <!-- Tags END -->
+
+      <!-- Hero Content -->
+
+
+
+    </section>
+
     <!-- 打赏 START -->
     <% if (theme.donate) { %>
       <div class="money-like">
@@ -32,18 +38,12 @@
     <% } %>
     <!-- 打赏 END -->
 
-    <% if (theme.comment === 'gitment') { %>
-      <!-- Gitment START -->
-      <div id="comments"></div>
-      <!-- Gitment END -->
-    <% } else if (theme.comment === 'uyan') { %>
+
       <!-- UY START -->
       <div id="uyan_frame"></div>
       <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
       <!-- UY END -->
-    <% } else { %>
-      <!-- No Comment -->
-    <% } %>
+
   </article>
   <!-- Article END -->
 </main>
