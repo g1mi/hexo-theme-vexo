@@ -26,7 +26,13 @@ donate: true
 # comment
 # you can set gitment or uyan
 
-comment: uyan
+comment: gitment
+
+# gitment config
+gitment_owner: g1mi
+gitment_repo: g1mi.github.io
+gitment_oauth_id: 16f078747e8e9fd98f13
+gitment_oauth_secret: 6e81b8da59ddc3b3dc31dde42cc979c25b4f63b3
 
 
 # uyan
