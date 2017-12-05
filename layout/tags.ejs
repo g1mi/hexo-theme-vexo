@@ -4,11 +4,15 @@
 </div>
 <main class="app-body">
   <div id="tag-cloud">
-    <% site.tags.map(function(tag, index) { %>
+    <% site.tags.map(function(tag, index) { 
+        if(tag.name != "Heroes") {
+      %>
       <a class="tag<%= Math.round(Math.random() * 3) %>" data-name="tag-<%= tag.name %>"><%= tag.name %></a>
-    <% }) %>
+    <% }}) %>
   </div>
-  <% site.tags.map(function(tag, index){ %>
+  <% site.tags.map(function(tag, index){ 
+      if(tag.name != "Heroes"){
+    %>
     <div class="tag-list">
       <h3 class="tag-name" id="tag-<%= tag.name %>"><%= tag.name %></h3>
       <% tag.posts.map(function(post) { %>
@@ -19,7 +23,7 @@
         </ul>
         <% }) %>
     </div>
-    <% }) %>
+    <% }}) %>
 </main>
 
 <script>

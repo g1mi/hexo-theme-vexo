@@ -1,5 +1,6 @@
 <main class="app-body">
   <% page.posts.each(function(post) { %>
+    <% if(post.title != "Heroes") { %>
     <article class="article-card">
       <h2 class="article-head">
         <a href="<%- url_for(post.path) %>"><%- post.title %></a>
@@ -17,7 +18,7 @@
       </div>
       <a class="more" href="<%- url_for(post.path) %>"><%- theme.excerpt_link %></a>
     </article>
-  <% }) %>
+  <% }}) %>
 
   <% if (page.total > 1){ %>
     <%- partial('_partial/pager') %>

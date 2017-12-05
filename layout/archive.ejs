@@ -10,7 +10,8 @@
       if (!years[y]) {
         years[y] = [];
       }
-      years[y].push(post);
+      if(post.title != "Heroes")
+        years[y].push(post);
     })
   %>
   <% for (let year of Object.keys(years).reverse()) { %>
