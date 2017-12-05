@@ -28,10 +28,6 @@ donate: true
 
 comment: uyan
 
-admin:
-  username: g1mi
-  password_hash: $2a$10$63VMvXh0wJUFOUZ.LSd77.aCB7X3NTfcUMq2Tfd57.vqkR.xajghC
-  secret: g1miology
 
 
 # uyan
