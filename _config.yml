@@ -8,7 +8,6 @@ excerpt_link: Read more
 menu:
  Heroes: /heroes
  Timeline: /archives/
- Projects: /project/
  Tags: /tags/
  About: /about/
 
@@ -38,7 +37,7 @@ baidu_id:
 about:
   banner: /css/images/about-banner.jpg
   avatar: https://avatars1.githubusercontent.com/u/12378287?s=460&v=4
-  description: Just try to be A most considerate INFO'er.
+  description: Just try to be another INFO'er.
   # Links
   weibo_username: 1
   twitter_username: 1
